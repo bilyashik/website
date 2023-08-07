@@ -1,0 +1,33 @@
+/* Common styles for both screen sizes */
+.peoples {
+    text-align: center;
+    margin: 20px;
+}
+
+.damir, .sultan {
+    margin-bottom: 20px;
+}
+
+/* Styles for larger screens (e.g., desktops) */
+@media screen and (min-width: 768px) {
+    .peoples {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .damir, .sultan {
+        width: 48%;
+    }
+}
+
+/* Styles for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+    .damir, .sultan {
+        width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
